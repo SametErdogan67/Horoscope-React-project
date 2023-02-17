@@ -1,0 +1,20 @@
+@import "./scss/mixins";
+@import "./scss/variables";
+@import "./scss/reset";
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Rubik Dirt", cursive;
+  background-image: $backgroundImage;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  color: white;
+  height: 100vh;
+}
+p {
+  font-family: "Roboto", sans-serif;
+}

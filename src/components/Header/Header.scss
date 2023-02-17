@@ -1,0 +1,33 @@
+@import "../../scss/variables";
+
+.header {
+  text-align: center;
+  margin: 1rem;
+  padding: 0.5rem;
+  margin-top: 12rem;
+
+  .text-shadow {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 0.2rem;
+    animation: flicker 0.8s ease-in-out infinite alternate;
+
+    &:hover {
+      color: rgb(2, 53, 223);
+      cursor: pointer;
+    }
+  }
+
+  @keyframes flicker {
+    0% {
+      opacity: 0.3;
+      text-shadow: 2px 2px 10px rgb(18, 18, 18);
+    }
+
+    100% {
+      opacity: 1;
+      text-shadow: 2px 2px 10px rgb(18, 18, 18);
+    }
+  }
+}
