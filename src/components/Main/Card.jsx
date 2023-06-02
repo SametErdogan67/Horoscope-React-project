@@ -1,15 +1,16 @@
-const Card = (data) => {
+const Card = ({ item }) => {
+  const { title, date, image, desc } = item;
   return (
     <div className="cards">
       <div className="title">
-        <h1>{data.title}</h1>
+        <h1>{title}</h1>
       </div>
       <div className="date">
-        <h1>{data.date}</h1>
+        <h1>{date}</h1>
       </div>
-      <img src={data.image} alt="" />
+      <img src={image} alt="" />
       <div className="card-over">
-        <p>{data.desc}</p>
+        <p>{desc}</p>
       </div>
     </div>
   );
